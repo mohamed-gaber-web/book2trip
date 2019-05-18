@@ -1,0 +1,46 @@
+.form-post{
+    background-color: #fff;
+    padding: 0 0 60px 0;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.form-post h3{
+    text-align: center;
+    font-size: 17px;
+    background-color: darkgreen;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px 5px 0  0;
+}
+
+.form-post .form-control {
+    border: none;
+    height: 80px;
+    border-radius: 0;
+    
+}
+
+.form-post button{
+    float: right;
+    background-color: coral;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 40px; 
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.form-control:focus{
+    border: none !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+
+.form-post .alert{
+    padding: 6px 20px;
+    border: 1px solid transparent;
+    width: 70%;
+    margin: auto;
+}

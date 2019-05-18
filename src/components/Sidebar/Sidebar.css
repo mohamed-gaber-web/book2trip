@@ -1,0 +1,35 @@
+.sidebar{
+    margin: 40px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.sidebar li{
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px;
+}
+
+.sidebar li .fas{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.sidebar li span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ff4638;
+    color: #fff;
+    float: right;
+    line-height: 25px;
+}
+
+.sidebar .active{
+    color: #ff4638;
+}

@@ -1,0 +1,45 @@
+.nav-section{
+    background-color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    font-size: 20px;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 15px;
+    padding: 30px 0;
+}
+
+.nav-section .active{
+    color: #ff4638 !important;
+    border-top: 4px solid #ff4638;
+    margin-bottom: -4px;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.logo, .person{
+    padding: 25px 0;
+}
+
+.person ul li{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.person ul li span{
+    color: #ff4638;
+    font-weight: 600;
+}
+
+.nav-item span{
+    position: relative;
+    top: -17px;
+}
+.nav-item .fas{
+    font-size: 20px;
+    margin: 0 25px;
+}
