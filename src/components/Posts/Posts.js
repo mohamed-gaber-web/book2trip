@@ -9,7 +9,7 @@ class Posts extends Component {
             <div>
                 <div className="post">
                     <div className='u-image'>
-                        <img src={require('../../assets/images/user.png')} alt="userpost" />
+                        <img src={require('../../assets/images/user.png')} alt="userpost" className="img-fluid" />
                     </div>
                     <div className="left">
                         <p className='username'> Username </p>

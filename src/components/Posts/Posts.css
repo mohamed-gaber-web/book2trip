@@ -61,3 +61,10 @@
     text-transform: uppercase;
     border: none;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .post img{
+        width: 100%;
+    }
+}
+   

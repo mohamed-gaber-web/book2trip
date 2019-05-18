@@ -43,3 +43,16 @@
     font-size: 20px;
     margin: 0 25px;
 }
+
+.navbar-toggler{
+    background-color: #ff4638 !important;
+}
+.navbar-toggler span{
+    color: #fff;
+}
+
+.navbar-toggler span .fas{
+    margin-top: 6px;
+    font-size: 22px;
+}
+
