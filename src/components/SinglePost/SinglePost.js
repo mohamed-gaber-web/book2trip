@@ -23,7 +23,7 @@ class SinglePosts extends Component {
     handleDeletePost = (id) => {
         return axios.delete('https://jsonplaceholder.typicode.com/posts/' + id).then(res => {
             console.log('Post Deleted')
-            this.props.history.push('/')
+            // this.props.history.push('/')
         }).catch(err => {
             console.log(err)
         })
