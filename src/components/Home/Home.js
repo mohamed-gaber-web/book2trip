@@ -13,14 +13,22 @@ class Home extends Component {
     // Get Posts Frpm Api
     componentDidMount() {
         return axios.get('https://jsonplaceholder.typicode.com/posts').then(response => {
-            const postsSlice = response.data.slice(0, 6);
+            const postsSlice = response.data.slice(0, 4);
+            const updatePost = postsSlice.map(post => {
+                return {
+                    ...post
+                }
+            })
             this.setState({
-                posts: postsSlice
+                posts: updatePost
             })
         }).catch(err => {
             console.log(err)
         })
     }
+
+
+
     render() {
         const posts = this.state.posts.map((post, index) => {
             return (
@@ -29,19 +37,19 @@ class Home extends Component {
                     content={post.body}
                     key={post.id}
                     id={post.id}
+                    posts={this.state.posts}
                 />
             );
         })
         return (
             <div>
                 <div className="container">
-
                     <div className="row">
                         <div className="col-md-3">
                             <Sidebar />
                         </div>
                         <div className="col-md-6">
-                            <NewPost />
+                            <NewPost posts={this.state.posts} />
                             {posts}
                         </div>
                         <div className="col-md-3">

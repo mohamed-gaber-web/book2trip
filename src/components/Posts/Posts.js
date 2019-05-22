@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import './Posts.css';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 class Posts extends Component {
+
+    handleDeletePost = (id) => {
+        return axios.delete('https://jsonplaceholder.typicode.com/posts/' + id).then(res => {
+            const allPosts = this.props.posts;
+            console.log(allPosts);
+            allPosts.splice(0, res)
+            console.log('Post Deleted ' + id);
+            console.log(allPosts);
+            // this.props.history.push('/')
+        }).catch(err => {
+            console.log(err)
+        })
+    }
 
     render() {
         return (
@@ -27,6 +41,7 @@ class Posts extends Component {
 
                     <NavLink to={'/single-post/' + this.props.id}> Read More <i class="fas fa-plus-square"></i> </NavLink>
                     <div className="clearfix"></div>
+                    <button className="btn btn-danger" onClick={() => { this.handleDeletePost(this.props.id) }}> <i class="fas fa-trash-alt"></i> Delete </button>
                 </div>
             </div>
         );

@@ -20,15 +20,6 @@ class SinglePosts extends Component {
         })
     }
 
-    handleDeletePost = (id) => {
-        return axios.delete('https://jsonplaceholder.typicode.com/posts/' + id).then(res => {
-            console.log('Post Deleted')
-            // this.props.history.push('/')
-        }).catch(err => {
-            console.log(err)
-        })
-    }
-
     render() {
 
         let postShow;
@@ -48,7 +39,6 @@ class SinglePosts extends Component {
                         {this.state.posts.body}
                     </p>
 
-                    <button className="btn btn-danger" onClick={() => this.handleDeletePost(this.state.posts.id)}> Delete <i class="fas fa-trash-alt"></i> </button>
                     <div className="clearfix"></div>
                 </div>
             )

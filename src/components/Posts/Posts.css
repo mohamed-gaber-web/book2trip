@@ -67,4 +67,11 @@
         width: 100%;
     }
 }
+
+@media (min-width: 481px) and (max-width: 1220px) {
+    .post img{
+        width: 100%;
+    }
+}
+   
    
